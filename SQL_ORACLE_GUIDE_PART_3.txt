@@ -1,0 +1,200 @@
+==================================================
+                    GUIDE
+==================================================
+
+================== TABLE OF CONTENTS ==================
+1. Introduction
+2. First Steps
+3. PL/SQL
+4. Cursors
+5. Sequences
+6. Indexes
+7. Creating Own Tables and Records
+8. Set Operations (Union, Intersect, Coalesce, Roll Up, etc.)
+9. Troubleshooting
+10. Conclusion
+
+==================================================
+
+/-----------------------------------------------\
+|                 1. Introduction               |
+\-----------------------------------------------/
+
+/-----------------------------------------------\
+|                                               |
+|  Enter introductory text for the guide here.  |
+|  Describe the general goals and scope of the  |
+|  material that will be covered.               |
+|                                               |
+\-----------------------------------------------/
+
+==================================================
+
+/-----------------------------------------------\
+|                 2. First Steps                |
+\-----------------------------------------------/
+
+/-----------------------------------------------\
+|                                               |
+|  Describe the first steps a user should take  |
+|  to start using the tool or technology being  |
+|  discussed.                                   |
+|                                               |
+\-----------------------------------------------/
+
+==================================================
+
+/-----------------------------------------------\
+|                   3. PL/SQL                   |
+\-----------------------------------------------/
+
+/-----------------------------------------------\
+|                                               |
+|  PL/SQL (Procedural Language/Structured Query |
+|  Language) is Oracle Corporation's procedural |
+|  extension for SQL and the Oracle relational  |
+|  database. PL/SQL combines the data            |
+|  manipulation power of SQL with the            |
+|  processing power of procedural languages.     |
+|  It allows you to write complex programs that  |
+|  can perform multiple operations in a single   |
+|  block of code, which improves performance     |
+|  and productivity.                             |
+|                                               |
+\-----------------------------------------------/
+
+==================================================
+
+/-----------------------------------------------\
+|                  4. Cursors                   |
+\-----------------------------------------------/
+
+/-----------------------------------------------\
+|                                               |
+|  Cursors in PL/SQL are used to handle the     |
+|  result set of a query one row at a time.     |
+|  They act as pointers that allow you to       |
+|  iterate through each row returned by a       |
+|  query, and to fetch and manipulate data row  |
+|  by row. There are two types of cursors:      |
+|  explicit and implicit. Explicit cursors      |
+|  are defined by the user, while implicit      |
+|  cursors are created automatically by PL/SQL  |
+|  when a query is executed.                    |
+|                                               |
+\-----------------------------------------------/
+
+==================================================
+
+/-----------------------------------------------\
+|                 5. Sequences                  |
+\-----------------------------------------------/
+
+/-----------------------------------------------\
+|                                               |
+|  Sequences are database objects that generate |
+|  unique numeric values. They are often used   |
+|  to create primary key values in tables.      |
+|  Sequences ensure that each value is unique   |
+|  and can be used to automatically increment   |
+|  a numeric value. Using sequences can help    |
+|  avoid concurrency issues and improve         |
+|  performance when inserting new records into  |
+|  a table.                                     |
+|                                               |
+\-----------------------------------------------/
+
+==================================================
+
+/-----------------------------------------------\
+|                  6. Indexes                   |
+\-----------------------------------------------/
+
+/-----------------------------------------------\
+|                                               |
+|  Indexes are special database objects that    |
+|  improve the speed of data retrieval. They    |
+|  work like pointers to the data in a table,   |
+|  allowing the database to find rows more      |
+|  quickly than if it had to search each row    |
+|  sequentially. Indexes are particularly       |
+|  useful for large tables and can be created   |
+|  on one or more columns. However, they also   |
+|  require additional storage space and can     |
+|  slow down data modification operations like  |
+|  INSERT, UPDATE, and DELETE.                  |
+|                                               |
+\-----------------------------------------------/
+
+==================================================
+
+/-----------------------------------------------\
+|     7. Creating Own Tables and Records        |
+\-----------------------------------------------/
+
+/-----------------------------------------------\
+|                                               |
+|  Creating your own tables and records in a    |
+|  database involves defining the table         |
+|  structure and inserting data into it. The    |
+|  CREATE TABLE statement is used to define     |
+|  the table and its columns, including their   |
+|  data types and constraints. Once the table   |
+|  is created, you can use the INSERT INTO      |
+|  statement to add records. Proper table       |
+|  design and data integrity constraints are    |
+|  crucial for efficient database performance   |
+|  and accurate data storage.                   |
+|                                               |
+\-----------------------------------------------/
+
+==================================================
+
+/-----------------------------------------------\
+|  8. Set Operations (Union, Intersect,         |
+|  Coalesce, Roll Up, etc.)                     |
+\-----------------------------------------------/
+
+/-----------------------------------------------\
+|                                               |
+|  Set operations allow you to combine results  |
+|  from two or more queries into a single       |
+|  result set. UNION combines the results of    |
+|  two queries, removing duplicates. INTERSECT  |
+|  returns only the rows that are present in    |
+|  both queries. COALESCE returns the first     |
+|  non-null value from a list of expressions.   |
+|  ROLLUP is used to create subtotals and       |
+|  grand totals in result sets. These           |
+|  operations are powerful tools for data       |
+|  analysis and reporting.                      |
+|                                               |
+\-----------------------------------------------/
+
+==================================================
+
+/-----------------------------------------------\
+|               9. Troubleshooting              |
+\-----------------------------------------------/
+
+/-----------------------------------------------\
+|                                               |
+|  Provide common problems users may encounter  |
+|  and ways to solve them.                      |
+|                                               |
+\-----------------------------------------------/
+
+==================================================
+
+/-----------------------------------------------\
+|                 10. Conclusion                |
+\-----------------------------------------------/
+
+/-----------------------------------------------\
+|                                               |
+|  Summarize the key points from the guide and  |
+|  add any final tips for the future.           |
+|                                               |
+\-----------------------------------------------/
+
+==================================================
