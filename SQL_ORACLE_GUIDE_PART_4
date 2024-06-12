@@ -83,7 +83,76 @@
 |  when a query is executed.                    |
 |                                               |
 \-----------------------------------------------/
+=====
+EXAMPLE:
+=======
+DECLARE
 
+
+  CURSOR employee_cursor IS
+
+
+    SELECT e.first_name, e.last_name, e.email, e.phone_number
+
+
+    FROM employees e
+
+
+    JOIN departments d ON e.department_id = d.department_id
+
+
+    WHERE d.department_name = 'Shipping';
+
+
+  
+
+
+  v_first_name employees.first_name%TYPE;
+
+
+  v_last_name employees.last_name%TYPE;
+
+
+  v_email employees.email%TYPE;
+
+
+  v_phone_number employees.phone_number%TYPE;
+
+
+BEGIN
+
+
+  OPEN employee_cursor;
+
+
+  LOOP
+
+
+    FETCH employee_cursor INTO v_first_name, v_last_name, v_email, v_phone_number;
+
+
+    EXIT WHEN employee_cursor%NOTFOUND;
+
+
+    DBMS_OUTPUT.PUT_LINE('Imię i nazwisko: ' || v_first_name || ' ' || v_last_name);
+
+
+    DBMS_OUTPUT.PUT_LINE('Adres email: ' || v_email);
+
+
+    DBMS_OUTPUT.PUT_LINE('Numer telefonu: ' || v_phone_number);
+
+
+    DBMS_OUTPUT.PUT_LINE('==============================');
+
+
+  END LOOP;
+
+
+  CLOSE employee_cursor;
+
+
+END;
 ==================================================
 
 /-----------------------------------------------\
@@ -103,7 +172,9 @@
 |  a table.                                     |
 |                                               |
 \-----------------------------------------------/
-
+=============
+  EXAMPLE:
+=============
 ==================================================
 
 /-----------------------------------------------\
@@ -148,6 +219,10 @@
 |                                               |
 \-----------------------------------------------/
 
+=============
+  EXAMPLE:
+=============
+
 ==================================================
 
 /-----------------------------------------------\
@@ -170,6 +245,26 @@
 |  analysis and reporting.                      |
 |                                               |
 \-----------------------------------------------/
+=============
+  EXAMPLE:
+=============
+--union
+select e.first_name, e.last_name, e.salary from employees e
+
+where e.salary >12000
+
+
+union
+
+
+select e.first_name, e.last_name, e.salary from employees e
+
+where e.department_id = 80; --id sales;
+
+
+
+
+
 
 ==================================================
 
